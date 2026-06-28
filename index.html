@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="fi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiikuLive IRL Overlay</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="overlay" class="bar">
+    <div class="flag" id="flag">🇫🇮</div>
+
+    <div class="place">
+      <div class="city" id="city">Haetaan sijaintia...</div>
+      <div class="date" id="date">--.--.----, --:--</div>
+    </div>
+
+    <div class="weather">
+      <span id="weatherIcon">☁️</span>
+      <span id="temperature">-- °C</span>
+    </div>
+
+    <div class="speed" id="speed">0 km/h</div>
+
+    <div class="battery">
+      <span id="batteryIcon">🔋</span>
+      <span id="battery">-- %</span>
+    </div>
+  </div>
+
+  <div id="help" class="help hidden">
+    <strong>MiikuLive IRL Overlay</strong><br>
+    Lisää osoitteeseen esim. <code>?demo=true</code> testiin tai <code>?city=Tampere</code> käsipaikkakunnalle.
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

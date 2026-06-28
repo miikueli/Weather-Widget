@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bar {
+  position: absolute;
+  right: 28px;
+  bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 650px;
+  padding: 10px 16px;
+  background: rgba(0, 0, 0, 0.62);
+  color: #fff;
+  border-radius: 2px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.85);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+}
+
+.flag {
+  font-size: 56px;
+  line-height: 1;
+}
+
+.place {
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
+}
+
+.city {
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+.date {
+  margin-top: 2px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.05;
+  white-space: nowrap;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 28px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.speed {
+  margin-left: auto;
+  font-size: 31px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.battery {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #24e850;
+  font-size: 27px;
+  font-weight: 900;
+  white-space: nowrap;
+}
+
+.help {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  max-width: 620px;
+  padding: 12px 14px;
+  background: rgba(0,0,0,0.72);
+  color: white;
+  font-size: 18px;
+  line-height: 1.4;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Pienempi versio, jos lisäät osoitteeseen ?size=small */
+body.small .bar {
+  min-width: 470px;
+  gap: 10px;
+  padding: 7px 11px;
+}
+
+body.small .flag {
+  font-size: 40px;
+}
+
+body.small .city {
+  font-size: 22px;
+}
+
+body.small .date {
+  font-size: 18px;
+}
+
+body.small .weather,
+body.small .battery {
+  font-size: 20px;
+}
+
+body.small .speed {
+  font-size: 23px;
+}
+
+/* Vasen alanurkka: ?position=left */
+body.left .bar {
+  left: 28px;
+  right: auto;
+}
+
+/* Yläreuna: ?position=top */
+body.top .bar {
+  top: 28px;
+  bottom: auto;
+}
